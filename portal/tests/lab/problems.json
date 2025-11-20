@@ -1,0 +1,51 @@
+[
+  {
+    "func": "q1_count_character_frequency",
+    "args": ["hello"],
+    "expected": { "h": 1, "e": 1, "l": 2, "o": 1 }
+  },
+  {
+    "func": "q2_count_word_frequency",
+    "args": ["hello world hello"],
+    "expected": { "hello": 2, "world": 1 }
+  },
+  {
+    "func": "q3_top_3_frequent_words",
+    "args": ["the cat and the dog and the bird"],
+    "expected": [
+      ["the", 3],
+      ["and", 2],
+      ["bird", 1]
+    ]
+  },
+  {
+    "func": "q4_safe_division",
+    "args": [10, 2],
+    "expected": 5.0
+  },
+  {
+    "func": "q5_find_maximum",
+    "args": [[1, 5, 3, 9, 2]],
+    "expected": 9
+  },
+  {
+    "func": "q6_is_palindrome",
+    "args": ["racecar"],
+    "expected": true
+  },
+  {
+    "func": "q7_extract_emails",
+    "args": ["Contact us at hello@example.com or support@test.org"],
+    "expected": ["hello@example.com", "support@test.org"]
+  },
+  {
+    "func": "q8_validate_phone_numbers",
+    "args": ["Call 123-456-7890 or 987-654-3210"],
+    "expected": ["123-456-7890", "987-654-3210"]
+  },
+  {
+    "func": "q9_extract_dates",
+    "args": ["Event on 25/12/2024 and 01/01/2025"],
+    "expected": ["25/12/2024", "01/01/2025"]
+  }
+]
