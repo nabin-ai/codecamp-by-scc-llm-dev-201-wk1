@@ -20,8 +20,12 @@ def q3_top_3_frequent_words(text):
         
     Example:
         >>> q3_top_3_frequent_words("the cat and the dog and the bird")
-        [('the', 3), ('and', 2), ('bird', 1)]
+        [('the', 3), ('and', 2), ('cat', 1)]
     """
+<<<<<<< HEAD
+    # Your code here
+    pass
+=======
     word_dict = {}
     words = text.split()
     for word in words:
@@ -29,9 +33,10 @@ def q3_top_3_frequent_words(text):
             word_dict[word] += 1
         else:
             word_dict[word] = 1
-    sorted_word_counter = sorted(word_dict.items(), key=lambda x: (-x[1], x[0]))
-    top_three = [[word, count] for word, count in sorted_word_counter[:3]]
-    return top_three
+    word_counter= list(word_dict.items())
+    sorted_word_counter = sorted(word_counter, key=lambda row: row[1], reverse=True)
+    return sorted_word_counter[:3]
 text="the cat and the dog and the bird"
 print(q3_top_3_frequent_words(text))
 
+>>>>>>> f9a2de1 (My work)

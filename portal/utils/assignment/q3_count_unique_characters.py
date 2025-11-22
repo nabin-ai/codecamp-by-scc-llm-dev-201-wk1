@@ -1,20 +1,8 @@
-"""Assignment Q3 - Count Unique Characters
-
-Write a function that takes a string and returns the number of unique characters.
-
-- Ignore spaces and case.
-
-Example:
-    >>> q3_count_unique_characters("Hello World")
-    8
-"""
-
-
 def q3_count_unique_characters(text):
     """
     Takes a string and returns the number of unique characters.
     
-    - Ignore spaces and case.
+    - Ignores spaces and case.
     
     Args:
         text (str): The input string to analyze
@@ -24,7 +12,15 @@ def q3_count_unique_characters(text):
         
     Example:
         >>> q3_count_unique_characters("Hello World")
-        8
+        7
     """
-    # Your code here
-    pass
+    txt = text.replace(' ', '') #Eliminates Spaces
+    t = txt.casefold() #converts into lower case for uniform checking 
+    unique_char = set(t) #Set removes all the duplicates
+    count = 0
+    for char in unique_char:
+        count += 1 #count each unique character
+    return count
+
+print(q3_count_unique_characters("Hello World"))
+        

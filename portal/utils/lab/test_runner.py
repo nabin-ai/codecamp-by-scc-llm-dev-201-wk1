@@ -21,7 +21,6 @@ class LabTests(unittest.TestCase):
                 func_name = problem['func']
                 args = problem['args']
                 expected = problem['expected']
-                print(problem)
                 
                 # Import the specific module containing the function
                 module_name = f"{MODULE_PATH}{func_name}"

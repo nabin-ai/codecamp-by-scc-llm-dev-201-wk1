@@ -27,6 +27,10 @@ def q4_safe_division(numerator, denominator):
         >>> q4_safe_division(10, 0)
         None
     """
+<<<<<<< HEAD
+    # Your code here
+    pass
+=======
     if denominator == 0:
         return None
     return numerator/denominator
@@ -35,3 +39,4 @@ numerator = 10
 denominator = 0
 print(q4_safe_division(numerator, denominator))
     
+>>>>>>> f9a2de1 (My work)

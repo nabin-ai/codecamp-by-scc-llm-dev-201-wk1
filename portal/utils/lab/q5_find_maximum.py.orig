@@ -26,17 +26,19 @@ def q5_find_maximum(numbers):
         >>> q5_find_maximum([])
         None
     """
+<<<<<<< HEAD
+    # Your code here
+    pass
+=======
     n = len(numbers)
     if n == 0:
         return None
-    max_num = numbers[0]
-    for num in numbers:
-        if num > max_num:
-            max_num = num
-    return float(max_num)
+    sorted_num = sorted(numbers, reverse=True)
+    return sorted_num[:1]
 
-print(q5_find_maximum([1, 5, 3, 9, 2]))
+print(q5_find_maximum([]))
 
 
 
     
+>>>>>>> f9a2de1 (My work)

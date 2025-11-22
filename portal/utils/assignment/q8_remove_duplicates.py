@@ -1,14 +1,3 @@
-"""Assignment Q8 - Remove Duplicates
-
-Write a function that takes a list and returns a new list with duplicates removed, 
-preserving the original order.
-
-Example:
-    >>> q8_remove_duplicates([1, 2, 2, 3, 4, 3, 5])
-    [1, 2, 3, 4, 5]
-"""
-
-
 def q8_remove_duplicates(items):
     """
     Takes a list and returns a new list with duplicates removed, 
@@ -24,5 +13,13 @@ def q8_remove_duplicates(items):
         >>> q8_remove_duplicates([1, 2, 2, 3, 4, 3, 5])
         [1, 2, 3, 4, 5]
     """
-    # Your code here
-    pass
+    # items_set = set(items)
+    num_list = []
+    for num in items:
+        if num in num_list: #If number already exists, then skip.
+            continue
+        else:
+            num_list.append(num)
+    return num_list
+    # return list(items_set)
+print(q8_remove_duplicates([1, 2, 2, 4, 3, 3, 5]))

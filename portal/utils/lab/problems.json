@@ -1,0 +1,7 @@
+[
+{
+    "func": "q1_count_character_freuency",
+    "args": ["Hello"],
+    "expected" : {"h": 1, "e": 1, "l": 2, "o": 1}
+}    
+]

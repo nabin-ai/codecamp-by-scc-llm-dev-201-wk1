@@ -7,9 +7,8 @@ Example:
     ['hello@example.com', 'support@test.org']
 """
 
+
 import re
-
-
 def q7_extract_emails(text):
     """
     Extract all valid email addresses from a string.
@@ -24,5 +23,8 @@ def q7_extract_emails(text):
         >>> q7_extract_emails("Contact us at hello@example.com or support@test.org")
         ['hello@example.com', 'support@test.org']
     """
-    # Your code here
-    pass
+    emails = re.findall(r'[\w.+-]+@[\w]+\.[\w.-]+', text)
+
+    return emails
+
+print(q7_extract_emails("Contact us at hello@example.com or support@test.org"))

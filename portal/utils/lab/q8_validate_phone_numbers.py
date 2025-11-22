@@ -24,5 +24,7 @@ def q8_validate_phone_numbers(text):
         >>> q8_validate_phone_numbers("Call 123-456-7890 or 987-654-3210")
         ['123-456-7890', '987-654-3210']
     """
-    # Your code here
-    pass
+    numbers = re.findall(r'[0-9]+-+[0-9]+-[0-9]+', text)
+    return numbers
+
+print(q8_validate_phone_numbers("Call 123-456-7890 or 987-654-3210"))

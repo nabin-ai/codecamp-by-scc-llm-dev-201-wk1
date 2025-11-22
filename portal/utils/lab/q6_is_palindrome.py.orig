@@ -30,6 +30,10 @@ def q6_is_palindrome(text):
         >>> q6_is_palindrome("A man a plan a canal Panama")
         True
     """
+<<<<<<< HEAD
+    # Your code here
+    pass
+=======
     txt = text.replace(' ', '')
     t = txt.casefold()
     isPalindrome = False
@@ -40,3 +44,4 @@ def q6_is_palindrome(text):
     return isPalindrome
 
 print(q6_is_palindrome("racecar"))
+>>>>>>> f9a2de1 (My work)
