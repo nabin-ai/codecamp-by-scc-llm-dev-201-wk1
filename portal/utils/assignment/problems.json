@@ -1,0 +1,111 @@
+[
+    {
+        "func": "q1_sentence_word_length",
+        "args": ["Hello, World!"],
+        "expected": {"hello": 5, "world": 5}
+    },
+    {
+        "func": "q1_sentence_word_length",
+        "args": ["!nabin nab!n"],
+        "expected": {"nabin": 5, "nabn": 4}
+    },
+
+    {
+        "func": "q2_common_elements_in_lists",
+        "args": [[1, 2, 3, 4], [3, 4, 5, 6]],
+        "expected": [3, 4]
+    },
+    {
+        "func": "q2_common_elements_in_lists",
+        "args": [[-2], [1, 2, 3]],
+        "expected": []
+    },
+
+    {
+        "func": "q3_count_unique_characters",
+        "args": ["Hello World"],
+        "expected": 7
+    },
+    {
+        "func": "q3_count_unique_characters",
+        "args": ["Aaaaaaammmaaaaaa"],
+        "expected": 2
+    },
+
+    {
+        "func": "q4_safe_factorial",
+        "args": 5,
+        "expected": 120
+    },
+    {
+        "func": "q4_safe_factorial",
+        "args": -5,
+        "expected": null
+    },
+
+    {
+        "func": "q5_reverse_words",
+        "args": ["Hello, World!"],
+        "expected": ["olleH, dlroW!"]
+    },
+    {
+        "func": "q5_reverse_words",
+        "args": ["!Nabin Nabin!"],
+        "expected": ["!nibaN nibaN!"]
+    },
+
+    {
+        "func": "q6_validate_password",
+        "args": ["ValidPass123"],
+        "expected": true
+    },
+    {
+        "func": "q6_validate_password",
+        "args": ["weakpass"],
+        "expected": false
+    },
+
+    {
+        "func": "q7_extract_hashtags",
+        "args": ["Check out #python and #coding!"],
+        "expected": ["python", "coding"]
+    },
+    {
+        "func": "q7_extract_hashtags",
+        "args": ["No hashtags here"],
+        "expected": []
+    },
+
+    {
+        "func": "q8_remove_duplicates",
+        "args": [1, 2, 2, 3, 4, 3, 5],
+        "expected": [1, 2, 3, 4, 5]
+    },
+    {
+        "func": "q8_remove_duplicates",
+        "args": [1, 2, 2, 4, 3, 3, 5],
+        "expected": [1, 2, 4, 3, 5]
+    },
+
+    {
+        "func": "q9_sum_numbers_in_text",
+        "args": ["I have 3 apples and 4 oranges"],
+        "expected": 7
+    },
+    {
+        "func": "q9_sum_numbers_in_text",
+        "args": ["No numbers here"],
+        "expected": 0
+    },
+
+    {
+        "func": "q10_find_anagrams",
+        "args": ["listen", ["silent", "enlist", "hello", "world"]],
+        "expected": ["silent", "enlist"]
+    },
+    {
+        "func": "q10_find_anagrams",
+        "args": ["abc", ["CAB", "ghi"]],
+        "expected": []
+    }
+]

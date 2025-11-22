@@ -29,4 +29,4 @@ def q1_sentence_word_lengths(sentence):
         word_len[word] = len(word)
     return word_len
 
-print(q1_sentence_word_lengths("Hello, World!"))
+print(q1_sentence_word_lengths("!nabin nab!n"))
