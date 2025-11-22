@@ -24,7 +24,7 @@ def q9_extract_dates(text):
         >>> q9_extract_dates("Event on 25/12/2024 and 01/01/2025")
         ['25/12/2024', '01/01/2025']
     """
-    # dates = re.findall(r'[0-9]+/[0-9]+/[0-9]+', text)
-    dates = re.findall(r'\b\d{2}/\d{2}/\d{4}\b', text)
+    dates = re.findall(r'[0-9]+/[0-9]+/[0-9]+', text)
+    # dates = re.findall(r'\b\d{2}/\d{2}/\d{4}\b', text)
     return dates
 print(q9_extract_dates("Event on 25/12/2024 and 01/01/2025"))
